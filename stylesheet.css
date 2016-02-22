@@ -1,0 +1,699 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+Fonts
+Headings - font-family: 'Aguafina Script', cursive;
+Body Copy - font-family: 'Source Sans Pro', sans-serif;
+
+
+/*General Styles*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-size: 4rem;
+	font-family: 'Aguafina Script', cursive;
+	color: white;
+}
+
+h2 {
+	font-size: 3rem;
+	font-family: 'Aguafina Script', cursive;
+
+}
+
+h3 {
+	font-size: 2rem;
+	font-family: 'Aguafina Script', cursive;
+}
+
+h4 {
+	font-size: 1.2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: 1rem;
+}
+
+.wrapper {
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*NAV SECTION*/
+
+/*Nav Section*/
+
+Nav {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.topNav {
+	background: rgba(0,0,0,1);
+	color: #868686;
+}
+
+.topNavLeft {
+	float: left;
+	padding-left: 50px;
+}
+
+.topNavLeft p {
+	margin-left: 50px;
+	display: inline-block;
+}
+
+.topNavRight {
+	float: right;
+	padding-right: 50px;
+}
+
+.topNavRightPhone, .topNavRightEmail, .topNavRightSearch {
+	float: left;
+	display: inline-block;
+	margin-right: 30px;
+	border-left: 1px solid #1A1A1A;
+	padding-left: 20px;
+}
+
+.topNavRightSearch {
+	padding: 15px;
+}
+
+.topNavRightPhone img, .topNavRightEmail img {
+	margin: 0 10px;
+}
+
+.topNavRightPhone p, .topNavRightEmail p {
+	display: inline-block;
+}
+
+.bottomNav {
+	background: rgba(0,0,0,0.4);
+	overflow: hidden;
+}
+
+.bottomNavLeft {
+	float: left;
+	margin: 25px 50px 15px 50px;
+	padding-left: 50px;
+}
+
+.bottomNavRight {
+	float: right;
+	padding-right: 50px;
+}
+
+.bottomNavRight li {
+	float: left;
+}
+
+.bottomNavRight li a {
+	color: white;
+	text-decoration: none;
+	padding: 25px 40px 15px 40px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.bottomNavRight li a:hover {
+	color: #ed4c46;
+}
+
+/*FOOTER SECTION*/
+
+/*Bottom Welcome Section*/
+
+.bottomWelcome {
+	clear: both;
+	background-image: url(images/header-background.jpg);
+	text-align: center;
+	padding: 50px 250px;
+	color: white;
+}
+
+.bottomWelcome h4 {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+/*Bottom Contact Section*/
+
+.bottomContact {
+	background: #303030;
+	color: #868686;
+}
+
+.bottomContact h4 {
+	color: white;
+}
+
+.bottomContact h4 {
+	margin: 0;
+	padding: 0;
+}
+
+.bottomContactWrapper {
+	padding: 10px 100px 5px 100px;
+}
+
+.bottomContactPiece {
+	width: 33.33%;
+	float: left;
+	padding: 30px;
+}
+
+input.newsletter  {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+button.newsletterSubmit  {
+	margin-left: -4px;
+	background: #ED4C46;
+	padding: 10px 20px;
+	border: none;
+}
+
+.bottomContactHours li {
+	clear: both;
+	line-height: 50%;
+}
+
+.bottomContactHours .bottomHoursLeft {
+	float: left;
+}
+
+.bottomContactHours .bottomHoursRight {
+	float: right;
+}
+
+.bottomContactAddress {
+	display: inline-block;
+}
+
+.bottomContactAddress .addressLine1, .bottomContactAddress .addressLine2, .bottomContactAddress .addressLine3, .bottomContactAddress .addressLine4 {
+	display: inline-block;
+}
+
+.bottomContactAddress p {
+	line-height: 50%;
+	margin: 12px 0 12px 0;
+}
+
+.bottomContactAddress .addressLine1:before {
+	width: 20px;
+	height: 20px;
+	content: url(images/icon-footerPin.png);
+	display: inline-block;
+}
+
+.bottomContactAddress .addressLine2 {
+	margin-left: 20px;
+}
+
+.bottomContactAddress .addressLine3:before {
+	width: 20px;
+	height: 20px;
+	content: url(images/icon-footerPhone.png);
+	display: inline-block;
+}
+
+.bottomContactAddress .addressLine4:before {
+	width: 20px;
+	height: 20px;
+	content: url(images/icon-footerEmail.png);
+	display: inline-block;
+}
+
+/*Bottom Footer Section*/
+
+.bottomFooter {
+	background: #242424;
+	color: #868686;
+	padding: 40px;
+	text-align: center;
+}
+
+.bottomFooter p {
+	margin: 0;
+}
+
+.bottomFooter .nootheme {
+	color: white;
+}
+
+.bottomFooter .bottomSocial {
+	padding: 40px;
+}
+
+.bottomFooter .bottomSocial img {
+	width: 13px;
+	height: 18px;
+	margin: 0 20px;
+}
+
+/*HOME SECTION*/
+
+/*Home Header Section*/
+
+.homeHeader {
+	background-image: url(images/food-kitchen-cutting-board-cooking.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.homeHeaderWelcome {
+	padding-top: 200px;
+	text-align: center;
+}
+
+.homeHeaderWelcome .headerTopImage {
+	margin-bottom: 25px;
+}
+
+.homeHeaderWelcome p {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.homeHeaderWelcome .homeStars {
+	margin: 0 20px;
+}
+
+.homeHeaderWelcome .headerBottomImage {
+	margin: 25px 0 150px 0;
+}
+
+/*Home About Section*/
+
+.homeAbout {
+	width: 100%;
+	background-color: white;
+	padding: 0 200px;
+	margin-bottom: 520px;
+}
+
+.homeAbout h4 {
+	font-weight: 400;
+}
+
+.homeAboutLeft {
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin: 100px 50px 0 0;
+}
+
+.homeAboutLeft h4 {
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+
+.homeAboutRight {
+	width: calc(50% - 100px);
+	float: left;
+	text-align: center;
+	margin: 50px 0 0 50px;
+}
+
+.homeAboutRight img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+/*Home Specials Section */
+
+.homeSpecials {
+	clear: both;
+	width: 100%;
+	height: 611px;
+	text-align: center;
+	padding: 50px 200px;
+	background: #F5F5F5;
+}
+
+.homeSpecialsWrapper {
+	height: 100%;
+	background: url(images/specials-border.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	max-width: 880px;
+	min-width: 764px;
+}
+
+.homeSpecials h2 {
+	margin-bottom: 40px;
+}
+
+.homeSpecials .homeSpecialsSegment {
+	width: 33.33%;
+	float: left;
+	padding: 0 40px;
+}
+
+.homeSpecials .segmentHeading {
+	text-transform: uppercase;
+}
+
+.homeSpecials li {
+	clear: both;
+}
+
+.homeSpecials .specialsSegmentLeft {
+	float: left;
+}
+
+.homeSpecials .specialsSegmentRight {
+	float: right;
+}
+
+.homeSpecials a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	margin-top: 35px;
+	border: 2px solid black;
+	padding: 10px 30px;
+}
+
+.homeSpecials a:hover {
+	color: #ed4c46;
+	border: 1px solid #ed4c46;
+}
+
+/*Home Separator*/
+
+.homeSeparator {
+	clear: both;
+	background: #F5F5F5;
+	height: 200px;
+}
+
+.homeSeperatorWrapper {
+	height: 100%;
+	background: url(images/cutlery.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 750px;
+	margin-right: 44px;
+}
+
+/*Home Reservations Section*/
+
+.homeReservations {
+	background-image: url(images/header-background.jpg);
+	text-align: center;
+	padding: 40px 100px 75px 100px;
+}
+
+.homeReservations h2 {
+	color: white;
+}
+
+.homeReservations p {
+	color: white;
+	padding-bottom: 40px;
+}
+
+.homeReservationsForm {
+	margin: 0;
+}
+
+input.name, input.time, input.date, input.email {
+	font-style: italic;
+	width: 30%;
+	padding: 5px 10px;
+}
+
+input.time {
+	margin: 5px 20px;
+}
+
+input.phone {
+	font-style: italic;
+	width: 20%;
+	margin: 20px 20px;
+	padding: 5px 10px;
+}
+
+input.number {
+	font-style: italic;
+	width: 20%;
+	padding: 5px 10px;
+}
+
+input.submit {
+	width: 17%;
+	margin-left: 20px;
+	color: white;
+	background-color: #ED4C46;
+	border: none;
+	padding: 5px 10px;
+}
+
+/*Home Services Section*/
+
+.homeServices {
+	padding-top: 50px;
+	text-align: center;
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
+.homeServices > p {
+	margin: 30px 300px 50px 300px;
+	text-align: center;
+}
+
+.homeServices .homeServicesGallery {
+	margin: 0 150px;
+}
+
+.homeServicesGallerySection {
+	width: 25%;
+	float: left;
+}
+
+.homeServices .homeServicesGallery .homeServicesGalleryImages {
+	width: 200px;
+	height: 130px;
+	background-color: white;
+	margin: 40px 10% 50px 10%;
+	float: left;
+	position: relative;
+}
+
+.homeServices .homeServicesGallery .homeServicesGalleryImages img {
+	position: absolute;
+	bottom: 65px;
+	left: 36px;
+}
+
+.homeServices .homeServicesGallery .homeServicesGalleryImages p {
+	color: black;
+	padding-top: 70px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/*MENU SECTION*/
+
+/*Menu Header*/
+
+.menuHeader {
+	background-image: url(images/header-background.jpg);
+	text-align: center;
+	padding: 160px 0 20px 0;
+	color: white;
+}
+
+.menuHeader a {
+	color: white;
+	text-decoration: none;
+	padding: 0 25px;
+}
+
+.menuHeader a:hover {
+	color: #ed4c46;
+}
+
+/*Menu Text*/
+
+.menuPiece {
+	width: 80%;
+	margin: 20px 100px 30px 150px;
+	display: inline-block;
+}
+
+.menuPiece h4 {
+	text-transform: uppercase;
+}
+
+.menuPieceColumn {
+	width: 33.33%;
+	float: left;
+}
+
+.menuPieceColumn li {
+	list-style-type: none;
+}
+
+.menuPieceColumn .tinyText {
+	font-size: 0.5rem;
+	color: grey;
+}
+
+.menuPieceColumn .menuPrice {
+	font-style: italic;
+	margin-bottom: 25px;
+}
+
+.menuPhotos {
+	width: 100%;
+}
+
+.menuPhotos img {
+	width: 25%;
+	float: left;
+}
+
+/*EVENTS SECTION*/
+
+/*Events Header*/
+
+.eventsHeader {
+	background-image: url(images/header-background.jpg);
+	text-align: center;
+	padding: 160px 0 20px 0;
+	color: white;	
+}
+
+.eventsHeader a {
+	color: white;
+	text-decoration: none;
+	padding: 0 25px;
+}
+
+.eventsHeader a:hover {
+	color: #ed4c46;
+}
+
+.eventsFeature {
+	padding: 100px 150px;
+	text-align: center;
+}
+
+.eventsFeature h4 {
+	font-size: 2rem;
+	margin: 20px 0 0 0;
+}
+
+.eventTime, .eventDate, .eventPlace {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+.eventTime:before {
+	content: url(images/icon-eventClock.png);
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.eventDate:before {
+	content: url(images/icon-eventDate.png);
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.eventPlace:before {
+	content: url(images/icon-eventPin.png);
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.eventsFeature img {
+	display: block;
+	margin: 50px auto;
+}
+
+.eventsFeatureCopy {
+	padding: 0 75px;
+}
+
+.eventMap {
+	margin: 50px 0;
+}
+
+.eventsFeature .eventButtonLeft {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	border: 2px solid black;
+	padding: 10px;
+	float: left;
+	margin-left: 80px;
+}
+
+.eventsFeature .eventButtonLeft:hover {
+	color: #ed4c46;
+	border: 2px solid #ed4c46;
+}
+
+.eventsFeature .eventButtonRight {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	border: 2px solid black;
+	padding: 10px;
+	float: right;
+	margin-right: 80px;
+}
+
+.eventsFeature .eventButtonRight:hover {
+	color: #ed4c46;
+	border: 2px solid #ed4c46;
+}
+
+/*Code by Owen Craig 2016*/
